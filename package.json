@@ -1,0 +1,35 @@
+{
+  "name": "veilroll",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Private payroll with auditor receipts, settled across chains through NEAR Confidential Intents.",
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types tests/*.test.ts",
+    "test:e2e": "node tests/e2e.mjs",
+    "test:integration": "node --experimental-strip-types tests/integration.mjs",
+    "test:flow": "node tests/flow.mjs"
+  },
+  "dependencies": {
+    "@hot-labs/near-connect": "^0.12.0",
+    "near-api-js": "^7.5.3",
+    "next": "^15.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.26",
+    "@types/react-dom": "^18.3.7",
+    "puppeteer-core": "^25.17.0",
+    "typescript": "^5.9.3"
+  }
+}
